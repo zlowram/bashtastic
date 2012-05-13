@@ -1,0 +1,13 @@
+####################################################################################
+#
+# Bash appearance file
+#
+# Author: Sergi MartÃ­nez-Bea (@zlowram)
+# 
+####################################################################################
+
+# Use bashtastic's defined colors
+source ~/bashtastic/etc/colors
+
+# Prompt
+PS1="\[$Green\][\t] \[$Yellow\]\u \[$Red\]» \[$Cyan\]\h\[$Color_Off\]:\W \$ "

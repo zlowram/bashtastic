@@ -1,0 +1,13 @@
+####################################################################################
+#
+# Bash appearance file
+#
+# Author: Sergi Martínez-Bea (@zlowram)
+# 
+####################################################################################
+
+# Use bash-o-matic's defined colors
+source ~/bashtastic/etc/colors
+
+# Prompt
+PS1="[\u@\h]:\w \$ "

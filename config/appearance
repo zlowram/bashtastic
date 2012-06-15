@@ -1,13 +1,12 @@
 ####################################################################################
 #
-# Bashtastic's aliases file
+# Bashtastic's appearance file
 #
 # Author: Sergi Martínez-Bea (@zlowram)
 # 
 ####################################################################################
 
-# GNU/Linux
-alias ls='ls --color=auto'
+# Basthastic's theme (change at will, themes are located in bastastic/themes/)
+theme="zlowy"
 
-# MacOSX
-# alias ls='ls -G'
+source ~/bashtastic/themes/$theme

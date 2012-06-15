@@ -1,17 +1,15 @@
-###########################################
+##################################################
 #
-# Bash configuration file (~/.bashrc)
+# Bashtastic's Bash configuration file (~/.bashrc)
 #
 # Author: Sergi Martínez-Bea (@zlowram)
 # 
-###########################################
+##################################################
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Bash theme (Available themes in ~/bashtastic/themes/)
-theme="zlowy"
-
-
-source ~/bashtastic/themes/$theme
+# Bashtastic's files
 source ~/bashtastic/config/aliases
+source ~/bashtastic/config/appearance
+

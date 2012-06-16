@@ -17,9 +17,6 @@ function linux_install {
     echo "#" >> ~/.bashrc
     echo "##################################################" >> ~/.bashrc
     echo "" >> ~/.bashrc
-    echo "# If not running interactively, don't do anything" >> ~/.bashrc
-    echo "[[ $- != *i* ]] && return" >> ~/.bashrc
-    echo "" >> ~/.bashrc
     echo "# Set OS" >> ~/.bashrc
     echo "export os=linux" >> ~/.bashrc
     echo "" >> ~/.bashrc
@@ -36,9 +33,6 @@ function mac_install {
     echo "# Author: Sergi Martínez-Bea (@zlowram)" >> ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "##################################################" >> ~/.bashrc
-    echo "" >> ~/.bashrc
-    echo "# If not running interactively, don't do anything" >> ~/.bashrc
-    echo "[[ $- != *i* ]] && return" >> ~/.bashrc
     echo "" >> ~/.bashrc
     echo "# Set OS" >> ~/.bashrc
     echo "export os=macosx" >> ~/.bashrc
@@ -63,16 +57,21 @@ echo "== INSTALLATION ===================================="
 echo ""
 echo "  1. Install for GNU/Linux"
 echo "  2. Install for MacOSX"
+echo ""
+echo -n "  Option: "
 
 read option 
+echo ""
 case $option in
     1)
         linux_install 
+        echo "  Bashtastic for GNU/Linux is now correctly installed!"
         ;;
     2)
         mac_install
+        echo "  Bashtastic for MacOSX is now correctly installed!"
         ;;
     *)
-        echo "[FAIL] This option does not exist!"
+        echo "  [FAIL] This option does not exist!"
         ;;
 esac 

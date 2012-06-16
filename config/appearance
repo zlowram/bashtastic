@@ -1,12 +1,12 @@
-####################################################################################
+#######################################
 #
 # Bashtastic's appearance file
 #
 # Author: Sergi Martínez-Bea (@zlowram)
 # 
-####################################################################################
+#######################################
 
 # Basthastic's theme (change at will, themes are located in bastastic/themes/)
-theme="zlowy"
+theme=zlowy
 
 source ~/bashtastic/themes/$theme

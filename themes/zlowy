@@ -1,10 +1,10 @@
-####################################################################################
+########################################
 #
-# Bash appearance file
+# Bashtastic's theme file
 #
-# Author: Sergi MartÃ­nez-Bea (@zlowram)
+# Author: Sergi Martínez-Bea (@zlowram)
 # 
-####################################################################################
+########################################
 
 # Use bashtastic's defined colors
 source ~/bashtastic/etc/colors

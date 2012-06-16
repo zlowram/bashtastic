@@ -1,12 +1,12 @@
-####################################################################################
+#######################################
 #
-# Bash appearance file
+# Bashtastic's theme 
 #
 # Author: Sergi Martínez-Bea (@zlowram)
 # 
-####################################################################################
+#######################################
 
-# Use bash-o-matic's defined colors
+# Use bashtastic's defined colors
 source ~/bashtastic/etc/colors
 
 # Prompt

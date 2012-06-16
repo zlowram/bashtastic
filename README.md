@@ -18,10 +18,11 @@ enjoy those:
     * Multiple-files configuration (forget about having only the .bashrc file!)
     * Themes support
 
-## INSTALL
+## Install
 To install Bashtastic you only have to clone the repo and execute the
 `install.sh` script you will find inside. Easy peasy!
 
 ## Who the hell did this?
-It was Sergi Martínez-Bea also known as zlOwram. You can find me on twitter
-under the tag @zlowram (c'mon! go and follow me!) 
+It was [Sergi Martínez-Bea](http://www.zlowram.net) also known as zlOwram. You
+can find me on twitter under the [@zlowram](http://twitter.com/zlowram) tag
+(c'mon! go and follow me!).

@@ -6,8 +6,10 @@
 # 
 ####################################################################################
 
-# GNU/Linux
-alias ls='ls --color=auto'
-
-# MacOSX
-# alias ls='ls -G'
+if [[ "$os" == "linux" ]]; then
+    # GNU/Linux
+    alias ls='ls --color=auto'
+else
+    # MacOSX
+    alias ls='ls -G'
+fi

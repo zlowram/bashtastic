@@ -50,13 +50,17 @@ echo "  / __  / __ \`/ ___/ __ \/ __/ __ \`/ ___/ __/ / ___/"
 echo " / /_/ / /_/ (__  ) / / / /_/ /_/ (__  ) /_/ / /__  "
 echo "/_____/\__,_/____/_/ /_/\__/\__,_/____/\__/_/\___/  "
 echo ""
-echo "                            by zlOwram (@zlowram)"
+echo "      by Sergi Martínez-Bea aka zlOwram (@zlowram)"
                                                               
 echo ""
 echo "== INSTALLATION ===================================="
 echo ""
+echo "[WARNING] Be careful! Bashtastic will overwrite your
+          existing .bashrc file. Please backup your
+          file first!"
+echo ""
 echo "  1. Install for GNU/Linux"
-echo "  2. Install for MacOSX"
+echo "  2. Install for MacOSX / FreeBSD"
 echo ""
 echo -n "  Option: "
 
@@ -69,7 +73,7 @@ case $option in
         ;;
     2)
         mac_install
-        echo "  Bashtastic for MacOSX is now correctly installed!"
+        echo "  Bashtastic for MacOSX / FreeBSD is now correctly installed!"
         ;;
     *)
         echo "  [FAIL] This option does not exist!"

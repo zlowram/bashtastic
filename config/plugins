@@ -1,0 +1,16 @@
+#######################################
+#
+# Bashtastic's plugin config file
+#
+# Author: Sergi Martínez-Bea (@zlowram)
+# 
+#######################################
+
+# Add the plugins you want to load in the array (separated by a blank space)
+plugin_list=(example)
+
+# Load all the plugins
+for plugin_name in ${plugin_list[*]}
+do
+    source ~/bashtastic/plugins/$plugin_name".bp"
+done

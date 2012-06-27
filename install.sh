@@ -9,9 +9,9 @@
 #####################################################
 
 function linux_install {
-    echo "##################################################" > ~/.bashrc
+    echo "##################################################" >> ~/.bashrc
     echo "#" >> ~/.bashrc
-    echo "# Bashtastic's Bash configuration file (~/.bashrc)" >> ~/.bashrc
+    echo "# Bashtastic's configuration for (~/.bashrc)" >> ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "# Author: Sergi Martínez-Bea (@zlowram)" >> ~/.bashrc
     echo "#" >> ~/.bashrc
@@ -26,9 +26,9 @@ function linux_install {
 }
 
 function mac_install {
-    echo "##################################################" > ~/.bashrc
+    echo "##################################################" >> ~/.bashrc
     echo "#" >> ~/.bashrc
-    echo "# Bashtastic's Bash configuration file (~/.bashrc)" >> ~/.bashrc
+    echo "# Bashtastic's configuration for (~/.bashrc)" >> ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "# Author: Sergi Martínez-Bea (@zlowram)" >> ~/.bashrc
     echo "#" >> ~/.bashrc
@@ -54,10 +54,6 @@ echo "      by Sergi Martínez-Bea aka zlOwram (@zlowram)"
                                                               
 echo ""
 echo "== INSTALLATION ===================================="
-echo ""
-echo "[WARNING] Be careful! Bashtastic will overwrite your
-          existing .bashrc file. Please backup your
-          file first!"
 echo ""
 echo "  1. Install for GNU/Linux"
 echo "  2. Install for MacOSX / FreeBSD"

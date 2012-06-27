@@ -1,0 +1,12 @@
+###############################################################################
+#
+# Bashtastic's example plugin file
+#
+# Author: Sergi Martínez-Bea (@zlowram)
+# 
+###############################################################################
+
+function example_plugin_function
+{
+    echo "This is the example plugin function of the example plugin file."
+}

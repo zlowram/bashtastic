@@ -9,5 +9,17 @@
 # Use bashtastic's defined colors
 source ~/bashtastic/etc/colors
 
+
+# Colored ls
+if [[ "$os" == "linux" ]]; then
+    # GNU/Linux
+    alias ls='ls --color=auto'
+else
+    # MacOSX
+    alias ls='ls -G'
+fi
+
 # Prompt
 PS1="\[$Green\][\t] \[$Yellow\]\u \[$Red\]» \[$Cyan\]\h\[$Color_Off\]:\W \$ "
+
+

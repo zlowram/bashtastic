@@ -1,12 +1,8 @@
-###############################################################################
-#
-# Bashtastic's example plugin file
-#
-# Author: Sergi Martínez-Bea (@zlowram)
-# 
-###############################################################################
+# Copyright 2014 Bashtastic Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
 
-function example_plugin_function
+function dummy_plugin_function 
 {
-    echo "This is the example plugin function of the example plugin file."
+    echo "This is the dummy plugin function of the dummy plugin."
 }

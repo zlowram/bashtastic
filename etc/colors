@@ -1,10 +1,14 @@
-####################################################################################
+# Copyright (C)  Wiki Archlinux.
+# Permission is granted to copy, distribute and/or modify this document under
+# the terms of the GNU Free Documentation License, Version 1.3or any later
+# version published by the Free Software Foundation;
+# with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+# A copy of the license can be found in the following link: 
 #
-# Bashtastic's colors file
-#
-# Author: http://wiki.archlinux.org/index.php/Color_Bash_Prompt
-# 
-####################################################################################
+# GNU Free Documentation License: http://www.gnu.org/copyleft/fdl.html
+
+
+# Taken from: http://wiki.archlinux.org/index.php/Color_Bash_Prompt
 
 # Reset
 Color_Off='\e[0m'       # Text Reset

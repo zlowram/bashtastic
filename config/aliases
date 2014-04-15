@@ -1,12 +1,7 @@
-###############################################################################
-#
-# Bashtastic's aliases file
-#
-# Author: Sergi Martínez-Bea (@zlowram)
-# 
-###############################################################################
+# Copyright 2014 Bashtastic Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
 
-# Directory listing
 alias lsa='ls -lah'
 alias l='ls -la'
 alias ll='ls -l'

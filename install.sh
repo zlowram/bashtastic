@@ -1,19 +1,15 @@
 #!/bin/bash
 
-#####################################################
-#
-# Bashtastic's installation file
-# 
-# Author: Sergi Martínez-Bea a.k.a zlOwram (@zlowram)
-#
-#####################################################
+# Copyright 2014 Bashtastic Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
 
 function linux_install {
     echo "##################################################" >> ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "# Bashtastic's configuration for (~/.bashrc)" >> ~/.bashrc
     echo "#" >> ~/.bashrc
-    echo "# Author: Sergi Martínez-Bea (@zlowram)" >> ~/.bashrc
+    echo "# Author: @zlowram_" >> ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "##################################################" >> ~/.bashrc
     echo "" >> ~/.bashrc
@@ -30,7 +26,7 @@ function mac_install {
     echo "#" >> ~/.bashrc
     echo "# Bashtastic's configuration for (~/.bashrc)" >> ~/.bashrc
     echo "#" >> ~/.bashrc
-    echo "# Author: Sergi Martínez-Bea (@zlowram)" >> ~/.bashrc
+    echo "# Author: @zlowram_" >> ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "##################################################" >> ~/.bashrc
     echo "" >> ~/.bashrc

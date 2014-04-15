@@ -1,10 +1,6 @@
-#######################################
-#
-# Bashtastic's appearance file
-#
-# Author: Sergi Martínez-Bea (@zlowram)
-# 
-#######################################
+# Copyright 2014 Bashtastic Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
 
 # Basthastic's theme (change at will, themes are located in bastastic/themes/)
 theme=zlowy

@@ -5,7 +5,7 @@
 # license that can be found in the LICENSE file.
 
 function linux_install {
-    mv $(pwd)/../bashtastic ~/.bashtastic
+    mv bashtastic ~/.bashtastic
     echo "##################################################" > ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "# Bashtastic's configuration for (~/.bashrc)" >> ~/.bashrc
@@ -23,7 +23,7 @@ function linux_install {
 }
 
 function mac_install {
-    mv $(pwd)/../bashtastic ~/.bashtastic
+    mv bashtastic ~/.bashtastic
     echo "##################################################" > ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "# Bashtastic's configuration for (~/.bashrc)" >> ~/.bashrc

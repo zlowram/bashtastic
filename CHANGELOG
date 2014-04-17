@@ -1,0 +1,30 @@
+Current version
+---------------
+Current version is v0.3
+
+v0.3
+----
+Updates:
+
+* Installation updated
+
+v0.2
+----
+New:
+
+* Plugin support
+
+Updates:
+
+* Modified aliases management
+
+Bugfixes:
+
+* Fixed the overwriting .bashrc bug
+
+v0.1
+----
+New:
+
+* Multiple-files configuration
+* Theme support

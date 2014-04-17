@@ -8,5 +8,5 @@ plugin_list=(example)
 # Load all the plugins
 for plugin_name in ${plugin_list[*]}
 do
-    source ~/bashtastic/plugins/$plugin_name".bp"
+    source ~/.bashtastic/plugins/$plugin_name".bp"
 done

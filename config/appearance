@@ -5,4 +5,4 @@
 # Basthastic's theme (change at will, themes are located in bastastic/themes/)
 theme=zlowy
 
-source ~/bashtastic/themes/$theme
+source ~/.bashtastic/themes/$theme

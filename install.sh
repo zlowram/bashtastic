@@ -5,7 +5,8 @@
 # license that can be found in the LICENSE file.
 
 function linux_install {
-    echo "##################################################" >> ~/.bashrc
+    mv $(pwd)/../bashtastic ~/.bashtastic
+    echo "##################################################" > ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "# Bashtastic's configuration for (~/.bashrc)" >> ~/.bashrc
     echo "#" >> ~/.bashrc
@@ -17,12 +18,13 @@ function linux_install {
     echo "export os=linux" >> ~/.bashrc
     echo "" >> ~/.bashrc
     echo "# Bashtastic's files" >> ~/.bashrc
-    echo "source ~/bashtastic/config/aliases" >> ~/.bashrc
-    echo "source ~/bashtastic/config/appearance" >> ~/.bashrc
+    echo "source ~/.bashtastic/config/aliases" >> ~/.bashrc
+    echo "source ~/.bashtastic/config/appearance" >> ~/.bashrc
 }
 
 function mac_install {
-    echo "##################################################" >> ~/.bashrc
+    mv $(pwd)/../bashtastic ~/.bashtastic
+    echo "##################################################" > ~/.bashrc
     echo "#" >> ~/.bashrc
     echo "# Bashtastic's configuration for (~/.bashrc)" >> ~/.bashrc
     echo "#" >> ~/.bashrc
@@ -34,10 +36,9 @@ function mac_install {
     echo "export os=macosx" >> ~/.bashrc
     echo "" >> ~/.bashrc
     echo "# Bashtastic's files" >> ~/.bashrc
-    echo "source ~/bashtastic/config/aliases" >> ~/.bashrc
-    echo "source ~/bashtastic/config/appearance" >> ~/.bashrc
-
-    echo "source ~/.bashrc" >> ~/.bash_profile
+    echo "source ~/.bashtastic/config/aliases" >> ~/.bashrc
+    echo "source ~/.bashtastic/config/appearance" >> ~/.bashrc
+    echo "source ~/.bashrc" > ~/.bash_profile
 }
 
 echo "    ____             __    __             __  _     "
@@ -46,8 +47,7 @@ echo "  / __  / __ \`/ ___/ __ \/ __/ __ \`/ ___/ __/ / ___/"
 echo " / /_/ / /_/ (__  ) / / / /_/ /_/ (__  ) /_/ / /__  "
 echo "/_____/\__,_/____/_/ /_/\__/\__,_/____/\__/_/\___/  "
 echo ""
-echo "      by Sergi Martínez-Bea aka zlOwram (@zlowram)"
-                                                              
+echo "      by zlowram (@zlowram_)"
 echo ""
 echo "== INSTALLATION ===================================="
 echo ""
@@ -58,6 +58,18 @@ echo -n "  Option: "
 
 read option 
 echo ""
+
+if [ -f ~/.bashrc ]; then
+    cp ~/.bashrc ~/.bashrc.bak
+    echo "  A backup of your previous .bashrc file was created at ~/.bashrc.bak"
+    echo ""
+fi
+if [ -f ~/.bash_profile ]; then
+    cp ~/.bash_profile ~/.bash_profile.bak
+    echo "  A backup of your previous .bash_profile file was created at ~/.bash_profile.bak"
+    echo ""
+fi
+
 case $option in
     1)
         linux_install 

@@ -15,4 +15,4 @@ enjoy those:
 To install Bashtastic you only have to copy & paste the following one-liner to
 your terminal:
 
-    git clone https://github.com/zlowram/bashtastic | bash bashtastic/install.sh
+    git clone https://github.com/zlowram/bashtastic && bash bashtastic/install.sh

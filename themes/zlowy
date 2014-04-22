@@ -5,15 +5,15 @@
 # Use bashtastic's defined colors
 source ~/.bashtastic/etc/colors
 
-
 # Colored ls
 if [[ "$os" == "linux" ]]; then
     # GNU/Linux
-    alias ls='ls --color=di=33;40:ln=36;40:so=32;40:pi=33;40:ex=32;40:bd=34;46:cd=33;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+    export LS_COLORS='di=33;40:ln=36;40:so=32;40:pi=33;40:ex=32;40:bd=34;46:cd=33;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+    alias ls='ls --color=auto'
 else
     # MacOSX
-    alias ls='ls -Gp'
     export LSCOLORS=dxgxcxdxcxegddabagacad
+    alias ls='ls -Gp'
 fi
 
 # Prompt

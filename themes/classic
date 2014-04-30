@@ -3,7 +3,7 @@
 # license that can be found in the LICENSE file.
 
 # Use bashtastic's defined colors
-source ~/bashtastic/etc/colors
+source ~/.bashtastic/etc/colors
 
 # Prompt
 PS1="[\u@\h]:\w \$ "

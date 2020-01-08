@@ -1,0 +1,13 @@
+# Copyright 2014 Bashtastic Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
+
+# Add the features you want to load in the array (separated by a blank space)
+# Note: Always keep appearance after plugins
+modules=(aliases plugins appearance)
+
+# Load all the modules
+for module_name in ${modules[*]}
+do
+    source ~/.bashtastic/config/$module_name
+done

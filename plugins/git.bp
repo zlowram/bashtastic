@@ -1,0 +1,18 @@
+# Git plugin
+
+# Enable Git completion for Bash
+source ~/.bashtastic/plugins/git/git-completion.bash
+
+# Enable Git prompt
+source ~/.bashtastic/plugins/git/git-prompt.bash
+
+# Git Promt Configuration
+
+# Show unstaged (*) and staged (+) changes next to branch name (uncomment the following line)
+GIT_PS1_SHOWDIRTYSTATE=True
+
+# Show if something is stashed ($) next to branch name (uncomment the following line)
+# GIT_PS1_SHOWSTASHSTATE=True
+
+# Show if there are any untracked (%) files next to branch name (uncomment the following line)
+# GIT_PS1_SHOWUNTRACKEDFILES=True

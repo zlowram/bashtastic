@@ -6,9 +6,9 @@
 source ~/.bashtastic/etc/colors
 
 # Colored ls
-if [[ "$os" == "linux" ]]; then
+if [[ "$(uname -s)" == "Linux" ]]; then
     # GNU/Linux
-    export LS_COLORS='di=33;40:ln=36;40:so=32;40:pi=33;40:ex=32;40:bd=34;46:cd=33;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+    export LS_COLORS='di=33:ln=36:so=32:pi=33:ex=32:bd=34:cd=33:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
     alias ls='ls --color=auto'
 else
     # MacOSX
@@ -17,6 +17,10 @@ else
 fi
 
 # Prompt
-PS1="\[$Green\][\t] \[$Yellow\]\u \[$Red\]» \[$Cyan\]\h\[$Color_Off\]:\W \$ "
 
+if [ ! -z "$BASHTASTIC_GIT_PLUGIN_ENABLED" ]; then
+	PS1="\[$Green\][\t] \[$Yellow\]\u \[$Red\]» \[$Cyan\]\h\[$Color_Off\]:\W\$(__git_ps1 ' (%s)') \$ "
+else
+	PS1="\[$Green\][\t] \[$Yellow\]\u \[$Red\]» \[$Cyan\]\h\[$Color_Off\]:\W \$ "
+fi
 

@@ -1,0 +1,20 @@
+# Python virtualenv plugin
+
+# Add the virtualenv names you use in the array (separated by a blank space)
+virtualenv_names=(venv .venv)
+
+function cd() {
+	builtin cd $1
+
+	for venv_name in ${virtualenv_names[*]}
+	do
+		if [[ -f "$venv_name/bin/activate" ]]; then
+			source $venv_name/bin/activate
+			break
+		fi
+
+		if [ ! -z "$VIRTUAL_ENV" ]; then
+			deactivate
+		fi
+	done
+}

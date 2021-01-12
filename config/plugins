@@ -11,6 +11,6 @@ do
     source ~/.bashtastic/plugins/$plugin_name".bp"
     # Register the active plugins so other components of bashtastic can check
     # if they're currently active
-    uppercase_plugin_name=$(echo $plugin_name | tr a-z A-Z)
+    uppercase_plugin_name=$(echo $plugin_name | tr a-z A-Z | tr - _)
     export BASHTASTIC_${uppercase_plugin_name}_PLUGIN_ENABLED=True
 done

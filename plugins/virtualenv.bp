@@ -4,7 +4,7 @@
 virtualenv_names=(venv .venv)
 
 function cd() {
-	builtin cd $1
+	builtin cd "$@"
 
 	for venv_name in ${virtualenv_names[*]}
 	do

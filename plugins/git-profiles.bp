@@ -1,0 +1,23 @@
+# Git profiles plugin
+#
+# Allows to automatically switch between git configurations for repositories located under
+# the specified directory.
+#
+# Profiles are defined in the $profiles_dir directory. See "example.profile" for an example.
+
+profiles_dir=$HOME/.bashtastic/plugins/git-profiles
+
+function cd() {
+    builtin cd "$@"
+
+    for profile in $(ls $profiles_dir/*.profile)
+    do
+        source $profile
+
+        if [[ $(pwd) == $profile_root_dir/* || $(pwd) == $profile_root_dir ]]; then
+            if [[ $(git rev-parse --is-inside-work-tree 2>/dev/null) ]]; then
+                eval "$profile_config"
+            fi
+        fi
+    done
+}
